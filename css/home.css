@@ -1,0 +1,7 @@
+@import "colors.less";
+
+/*Main Page*/
+.main {
+  background-color: @m-teal;
+  color:@m-silver;
+}

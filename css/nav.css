@@ -1,0 +1,62 @@
+@import "colors.less";
+
+/*Nav Bar*/
+  .nav1 {
+    background-color:@c-brown;
+  }
+
+  .nav1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .nav1 li {
+    float: left;
+  }
+
+  .nav1 a{
+    padding: 8px;
+    display: block;
+    color: @c-green;
+    text-align: center;
+    padding: 14px 16px;
+  }
+
+  .nav1 a:hover{
+    background-color: @c-tan;
+  }
+
+  .activeMenu li{
+    background-color: @c-tan;
+  }
+
+  /*Dropdown Element*/
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdownCont {
+      display: none;
+      position: absolute;
+      background-color: @c-brown;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdownCont a{
+      padding: 8px;
+      display: block;
+      color: @c-green;
+      text-align: center;
+      padding: 14px 16px;
+    }
+
+    .dropdownCont a:hover{background-color: @c-tan;}
+
+    .dropdown:hover .dropdownCont{
+      display: block;
+    }
