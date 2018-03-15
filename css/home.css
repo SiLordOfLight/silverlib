@@ -1,7 +1,4 @@
-@import "colors.less";
-
-/*Main Page*/
-.main {
-  background-color: @m-teal;
-  color:@m-silver;
+/*Website Background*/
+html {
+  background-color: #6d938f;
 }

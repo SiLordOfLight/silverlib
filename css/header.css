@@ -1,0 +1,17 @@
+.header {
+  /* padding-top: 1px; */
+
+  background-color: #362415;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header h1{
+  text-align: center;
+  color: #c0c0c0;
+  font-size: 50px;
+  margin: 0px;
+  padding: 0px;
+}
