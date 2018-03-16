@@ -1,21 +1,40 @@
-$.get("data/versions.txt", null, function(text){
-    var versionsTextList = text.split(";\n");
+var listOut = document.getElementById('versions')
 
-    var versionsList = [];
-    for (var verz in versionsList) {
-      var pts = verz.split("|");
+$.ajax({
+  url : "data/versions.txt",
+  dataType: "text",
+  success : function (data) {
+      processData(data);
+  }
+});
 
-      var versi = {version:pts[0], url:pts[1], title:pts[2], kind:pts[3]};
+function processData(data) {
+  versionList = data.split("\n");
 
-      versionsList.push(versi);
-    }
+  versionList.forEach(makeItem);
+}
 
-    var outHtml = "";
+function makeItem(item) {
+  var versi = item.split('|');
 
-    for (var i = 0; i < versionsList.length; i++) {
-      outHtml += "<li>Version <a href=\""+versionsList[i].url+"\">+"versionsList[i].version+"</a>: ";
-      outHtml += versionsList[i].title+" |   "+versionsList[i].kind+"</li>\n";
-    }
+  var ne = {version:versi[0], url:versi[1], title:versi[2], kind:versi[3]};
 
-    document.getElementById("versions").innerHTML = outHtml;
-}, "text");
+  processVersion(ne);
+}
+
+function processVersion(item) {
+    var row = listOut.insertRow(-1);
+
+    var vCell = row.insertCell(0);
+    var tCell = row.insertCell(1);
+    var kCell = row.insertCell(2);
+
+    vCell.id = "versionCell";
+    tCell.id = "titleCell";
+    vCell.id = "typeCell";
+
+    vCell.innerHTML = `<a href="${item.url}">${item.version}</a>`;
+    vCell.href = item.url
+    tCell.innerHTML = item.title;
+    kCell.innerHTML = item.kind;
+}

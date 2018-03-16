@@ -26,5 +26,3 @@
 1.2|downloads/silverlib-1.2.zip|Log Files|Release
 1.1.3|downloads/silverlib-1.1.1.zip|Error Logging|Development
 1.1|downloads/silverlib-1.1.zip|Logging|Release
-
-
