@@ -39,13 +39,20 @@
     <div class="downloadList">
       <table id="versions">
         <tr>
-          <th>Version Number</th>
+          <th id="leftHeader">Version Number</th>
           <th>Title</th>
           <th>Version Type</th>
         </tr>
 
       </table>
       <script src="js/getVersions.js"></script>
+
     </div>
+
+    <script>
+      var table1 = document.getElementById('versions');
+      var lastRow = table1.rows[ table1.rows.length - 1 ];
+      lastRow.id = "lastRow"
+    </script>
   </body>
 </html>

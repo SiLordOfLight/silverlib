@@ -2,7 +2,56 @@
   padding-top: 20px;
 }
 
-.downloadList table, th, td {
-  border: 1px solid black;
+.downloadList table#versions {
+  background-color: #362415;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 20px;
+  border-bottom-left-radius: 0px;
+}
+
+.downloadList table#versions td {
+  border: 1px solid #c0c0c0;
+  color: #15a23c;
+}
+
+.downloadList table#versions th {
+  color: #15a23c;
+  border-left: 1px solid #c0c0c0;
+}
+
+.downloadList table#versions th#leftHeader {
+  border-left: 0px solid #c0c0c0;
+}
+
+.downloadList table#versions #lastRow td{
+  border-radius: 20px;
+  border-left: 0px solid #c0c0c0;
+}
+
+.downloadList table#versions td, th{
+  padding: 5px;
+}
+
+.downloadList table#versions td#versionCell a{
+  color:rgb(104, 144, 232);
+}
+
+.downloadList table#versions tr:hover {
+  background-color: #eac784;
+}
+
+.downloadList table#versions td:hover {
+  color: #0d6f28;
+}
+
+.downloadList table#versions td#ReleaseType {
+  background-color: #af75dd;
+  color: black;
+}
+
+.downloadList table#versions td#BetaType {
+  background-color: #d68695;
+  color: black;
 }
 

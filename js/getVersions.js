@@ -31,10 +31,11 @@ function processVersion(item) {
 
     vCell.id = "versionCell";
     tCell.id = "titleCell";
-    vCell.id = "typeCell";
+    kCell.id = item.kind+"Type";
 
     vCell.innerHTML = `<a href="${item.url}">${item.version}</a>`;
     vCell.href = item.url
     tCell.innerHTML = item.title;
     kCell.innerHTML = item.kind;
 }
+
