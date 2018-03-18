@@ -45,6 +45,10 @@
   color: #0d6f28;
 }
 
+.downloadList table#versions tr#headerRow:hover {
+  color: #0d6f28;
+}
+
 .downloadList table#versions td#ReleaseType {
   background-color: #af75dd;
   color: black;
