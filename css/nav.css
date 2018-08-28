@@ -77,4 +77,6 @@
   display: block;
 }
 
-
+.navBar li img {
+  height: inherit;
+}
