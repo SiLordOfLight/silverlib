@@ -1,3 +1,4 @@
+1.10.6-b016|downloads/silverlib-1.10.6-b016.zip|1.10.6 Pre-Dev|Beta
 1.10.5|downloads/silverlib-1.10.5.zip|Multiple Instrument Songs|Development
 1.10.5-b002|downloads/silverlib-1.10.4.3.zip|1.10.5 Pre-Dev|Beta
 1.10.5-b001|downloads/silverlib-1.10.4.2.zip|1.10.5 Pre-Dev|Beta
