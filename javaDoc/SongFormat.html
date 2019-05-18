@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Song Format</title>
+    </head>
+    <body>
+        <h4>First Line: </h4> <p>Title,Time Sig,Time Sig,Tempo,Flats:Flats,Sharps:Sharps</p><br/><br/>
+
+        <h4>Notes:</h4><br/>
+        <ul>
+            <li>NOTE.DUR = NOTE for duration 1/DUR</li>
+            <li>e.g. A3.1 = A in Octave 3 for a whole beat</li>
+            <li>NOTE*DUR = NOTE for duration DUR</li>
+            <li>e.g. C4#*1.75 = C sharp in Octave 4 for 1 and 3/4 whole notes</li>
+            <li>Append '~' to indicate a trill</li>
+            <li>Place a '$' after the note name to cancel a sharp/flat</li>
+            <li>_ = A rest</li>
+        </ul><br/><br/>
+
+        <h4>Methods:</h4><br/>
+        <ul>
+            <li>VOL:nvol = Changes dynamic to nvol</li>
+            <li>e.g. VOL:FF = Changes dynamic to Fortissimo</li>
+            <li>CRESC:nvol:num = Change dynamic to nvol over num notes</li>
+            <li>e.g. CRESC:P:5 = Change dynamic to Piano in 5 notes</li>
+            <li>MARK:txt = Create a mark called txt at the location</li>
+            <li>GOTO:txt = Go to the mark called txt in the music and delete it</li>
+            <li>INST:ninst = Change instrument to ninst</li>
+        </ul><br/><br/>
+
+    </body>
+</html>
